@@ -72,14 +72,14 @@ const styles = `
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background: #f5f0e8;
-    color: #1a2744;
+    background: #132030;
+    color: #e8e2d5;
     font-family: 'DM Sans', sans-serif;
   }
 
   .scan-wrap {
     min-height: 100vh;
-    background: #f5f0e8;
+    background: #132030;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@ const styles = `
     font-weight: 300;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.5);
+    color: rgba(232,226,213,0.5);
   }
 
   /* INTRO */
@@ -141,7 +141,7 @@ const styles = `
     font-size: clamp(38px, 5vw, 56px);
     font-weight: 400;
     line-height: 1.1;
-    color: #1a2744;
+    color: #e8e2d5;
     margin-bottom: 32px;
     letter-spacing: -0.01em;
   }
@@ -155,7 +155,7 @@ const styles = `
     font-size: 16px;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(26,39,68,0.75);
+    color: rgba(232,226,213,0.75);
     margin-bottom: 48px;
   }
 
@@ -164,8 +164,8 @@ const styles = `
     gap: 32px;
     margin-bottom: 48px;
     padding: 24px 0;
-    border-top: 1px solid rgba(26,39,68,0.12);
-    border-bottom: 1px solid rgba(26,39,68,0.12);
+    border-top: 1px solid rgba(232,226,213,0.12);
+    border-bottom: 1px solid rgba(232,226,213,0.12);
   }
 
   .meta-item {
@@ -185,7 +185,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.55);
+    color: rgba(232,226,213,0.55);
   }
 
   .btn-primary {
@@ -193,7 +193,7 @@ const styles = `
     align-items: center;
     gap: 12px;
     background: #d4af37;
-    color: #1a2744;
+    color: #e8e2d5;
     border: none;
     padding: 16px 32px;
     font-family: 'DM Sans', sans-serif;
@@ -241,7 +241,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.6);
+    color: rgba(232,226,213,0.6);
   }
 
   .progress-count {
@@ -251,7 +251,7 @@ const styles = `
 
   .progress-track {
     height: 2px;
-    background: rgba(26,39,68,0.12);
+    background: rgba(232,226,213,0.12);
     position: relative;
   }
 
@@ -264,7 +264,7 @@ const styles = `
   .element-block {
     margin-bottom: 64px;
     padding-bottom: 64px;
-    border-bottom: 1px solid rgba(26,39,68,0.1);
+    border-bottom: 1px solid rgba(232,226,213,0.1);
   }
 
   .element-block:last-child {
@@ -283,7 +283,7 @@ const styles = `
     font-family: 'Cormorant Garamond', serif;
     font-size: 26px;
     font-weight: 500;
-    color: #1a2744;
+    color: #e8e2d5;
     margin-bottom: 36px;
   }
 
@@ -299,7 +299,7 @@ const styles = `
     font-size: 15px;
     font-weight: 400;
     line-height: 1.65;
-    color: rgba(26,39,68,0.9);
+    color: rgba(232,226,213,0.9);
     margin-bottom: 16px;
   }
 
@@ -312,9 +312,9 @@ const styles = `
   .scale-btn {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(26,39,68,0.25);
+    border: 1px solid rgba(232,226,213,0.25);
     background: transparent;
-    color: rgba(26,39,68,0.65);
+    color: rgba(232,226,213,0.65);
     font-size: 13px;
     cursor: pointer;
     transition: all 0.15s;
@@ -332,7 +332,7 @@ const styles = `
   .scale-btn.selected {
     background: #d4af37;
     border-color: #d4af37;
-    color: #1a2744;
+    color: #e8e2d5;
     font-weight: 500;
   }
 
@@ -346,7 +346,7 @@ const styles = `
   .scale-end-label {
     font-size: 10px;
     letter-spacing: 0.1em;
-    color: rgba(26,39,68,0.5);
+    color: rgba(232,226,213,0.5);
     text-transform: uppercase;
   }
 
@@ -400,13 +400,13 @@ const styles = `
     font-family: 'Cormorant Garamond', serif;
     font-size: 28px;
     font-weight: 400;
-    color: #1a2744;
+    color: #e8e2d5;
   }
 
   .gen-body {
     font-size: 14px;
     font-weight: 300;
-    color: rgba(26,39,68,0.6);
+    color: rgba(232,226,213,0.6);
     line-height: 1.6;
   }
 
@@ -435,15 +435,15 @@ const styles = `
     font-size: 16px;
     font-weight: 300;
     line-height: 1.85;
-    color: rgba(26,39,68,0.9);
+    color: rgba(232,226,213,0.9);
     white-space: pre-wrap;
     margin-bottom: 56px;
   }
 
   .result-surface {
     padding: 28px;
-    border: 1px solid rgba(26,39,68,0.12);
-    background: rgba(26,39,68,0.02);
+    border: 1px solid rgba(232,226,213,0.12);
+    background: rgba(232,226,213,0.02);
     margin-bottom: 56px;
   }
 
@@ -451,7 +451,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.5);
+    color: rgba(232,226,213,0.5);
     margin-bottom: 12px;
   }
 
@@ -459,7 +459,7 @@ const styles = `
     font-size: 14px;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(26,39,68,0.75);
+    color: rgba(232,226,213,0.75);
     margin-bottom: 20px;
   }
 
@@ -468,11 +468,11 @@ const styles = `
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
-    color: rgba(26,39,68,0.85);
+    color: rgba(232,226,213,0.85);
     line-height: 1.6;
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid rgba(26,39,68,0.1);
+    border-top: 1px solid rgba(232,226,213,0.1);
   }
 
   .result-cta {
@@ -493,7 +493,7 @@ const styles = `
   .cta-text {
     font-size: 15px;
     font-weight: 300;
-    color: rgba(26,39,68,0.75);
+    color: rgba(232,226,213,0.75);
     line-height: 1.6;
     margin-bottom: 24px;
   }
@@ -509,7 +509,7 @@ const styles = `
     align-items: center;
     gap: 8px;
     background: #d4af37;
-    color: #1a2744;
+    color: #e8e2d5;
     text-decoration: none;
     padding: 12px 24px;
     font-size: 13px;
@@ -529,7 +529,7 @@ const styles = `
     align-items: center;
     gap: 8px;
     background: transparent;
-    color: rgba(26,39,68,0.7);
+    color: rgba(232,226,213,0.7);
     text-decoration: none;
     padding: 12px 24px;
     font-size: 13px;
@@ -537,7 +537,7 @@ const styles = `
     letter-spacing: 0.08em;
     text-transform: uppercase;
     cursor: pointer;
-    border: 1px solid rgba(26,39,68,0.2);
+    border: 1px solid rgba(232,226,213,0.2);
     font-family: 'DM Sans', sans-serif;
     transition: all 0.2s;
   }
@@ -549,7 +549,7 @@ const styles = `
 
   .result-newsletter {
     padding: 28px;
-    border: 1px solid rgba(26,39,68,0.1);
+    border: 1px solid rgba(232,226,213,0.1);
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -559,18 +559,18 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.5);
+    color: rgba(232,226,213,0.5);
   }
 
   .newsletter-text {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.65;
-    color: rgba(26,39,68,0.75);
+    color: rgba(232,226,213,0.75);
   }
 
   .newsletter-text strong {
-    color: #1a2744;
+    color: #e8e2d5;
     font-weight: 500;
   }
 
