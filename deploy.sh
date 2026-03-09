@@ -12,6 +12,7 @@ VEOF
 curl -s https://raw.githubusercontent.com/pkinglux-glitch/glass-elevator-assets/main/vite.config.ts -o vite.config.ts
 curl -s https://raw.githubusercontent.com/pkinglux-glitch/glass-elevator-assets/main/fix-assets.cjs -o fix-assets.cjs
 curl -s https://raw.githubusercontent.com/pkinglux-glitch/glass-elevator-assets/main/TheScan.jsx -o src/app/components/TheScan.tsx
+echo "export { default as TheScan } from './TheScan.tsx';" >> src/app/components/TheScan.tsx
 mkdir -p api
 curl -s https://raw.githubusercontent.com/pkinglux-glitch/glass-elevator-assets/main/generate-result.js -o api/generate-result.js
 
