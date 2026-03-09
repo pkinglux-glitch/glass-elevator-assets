@@ -72,14 +72,14 @@ const styles = `
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background: #0a0f1a;
-    color: #e8e2d5;
+    background: #f5f0e8;
+    color: #1a2744;
     font-family: 'DM Sans', sans-serif;
   }
 
   .scan-wrap {
     min-height: 100vh;
-    background: #0a0f1a;
+    background: #f5f0e8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@ const styles = `
     font-weight: 300;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(232,226,213,0.5);
+    color: rgba(26,39,68,0.5);
   }
 
   /* INTRO */
@@ -141,7 +141,7 @@ const styles = `
     font-size: clamp(38px, 5vw, 56px);
     font-weight: 400;
     line-height: 1.1;
-    color: #e8e2d5;
+    color: #1a2744;
     margin-bottom: 32px;
     letter-spacing: -0.01em;
   }
@@ -155,7 +155,7 @@ const styles = `
     font-size: 16px;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(232,226,213,0.7);
+    color: rgba(26,39,68,0.7);
     margin-bottom: 48px;
   }
 
@@ -185,7 +185,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(232,226,213,0.4);
+    color: rgba(26,39,68,0.4);
   }
 
   .btn-primary {
@@ -193,7 +193,7 @@ const styles = `
     align-items: center;
     gap: 12px;
     background: #d4af37;
-    color: #0a0f1a;
+    color: #f5f0e8;
     border: none;
     padding: 16px 32px;
     font-family: 'DM Sans', sans-serif;
@@ -241,7 +241,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(232,226,213,0.4);
+    color: rgba(26,39,68,0.4);
   }
 
   .progress-count {
@@ -283,7 +283,7 @@ const styles = `
     font-family: 'Cormorant Garamond', serif;
     font-size: 26px;
     font-weight: 500;
-    color: #e8e2d5;
+    color: #1a2744;
     margin-bottom: 36px;
   }
 
@@ -299,7 +299,7 @@ const styles = `
     font-size: 15px;
     font-weight: 300;
     line-height: 1.65;
-    color: rgba(232,226,213,0.85);
+    color: rgba(26,39,68,0.85);
     margin-bottom: 16px;
   }
 
@@ -314,7 +314,7 @@ const styles = `
     height: 40px;
     border: 1px solid rgba(255,255,255,0.12);
     background: transparent;
-    color: rgba(232,226,213,0.4);
+    color: rgba(26,39,68,0.4);
     font-size: 13px;
     cursor: pointer;
     transition: all 0.15s;
@@ -332,7 +332,7 @@ const styles = `
   .scale-btn.selected {
     background: #d4af37;
     border-color: #d4af37;
-    color: #0a0f1a;
+    color: #f5f0e8;
     font-weight: 500;
   }
 
@@ -346,7 +346,7 @@ const styles = `
   .scale-end-label {
     font-size: 10px;
     letter-spacing: 0.1em;
-    color: rgba(232,226,213,0.3);
+    color: rgba(26,39,68,0.3);
     text-transform: uppercase;
   }
 
@@ -400,13 +400,13 @@ const styles = `
     font-family: 'Cormorant Garamond', serif;
     font-size: 28px;
     font-weight: 400;
-    color: #e8e2d5;
+    color: #1a2744;
   }
 
   .gen-body {
     font-size: 14px;
     font-weight: 300;
-    color: rgba(232,226,213,0.5);
+    color: rgba(26,39,68,0.5);
     line-height: 1.6;
   }
 
@@ -435,7 +435,7 @@ const styles = `
     font-size: 16px;
     font-weight: 300;
     line-height: 1.85;
-    color: rgba(232,226,213,0.85);
+    color: rgba(26,39,68,0.85);
     white-space: pre-wrap;
     margin-bottom: 56px;
   }
@@ -462,7 +462,7 @@ const styles = `
   .score-element {
     font-size: 12px;
     font-weight: 400;
-    color: rgba(232,226,213,0.5);
+    color: rgba(26,39,68,0.5);
     width: 120px;
     flex-shrink: 0;
   }
@@ -558,7 +558,7 @@ const styles = `
   .cta-text {
     font-size: 15px;
     font-weight: 300;
-    color: rgba(232,226,213,0.7);
+    color: rgba(26,39,68,0.7);
     line-height: 1.6;
     margin-bottom: 24px;
   }
@@ -574,7 +574,7 @@ const styles = `
     align-items: center;
     gap: 8px;
     background: #d4af37;
-    color: #0a0f1a;
+    color: #f5f0e8;
     text-decoration: none;
     padding: 12px 24px;
     font-size: 13px;
@@ -636,7 +636,7 @@ const styles = `
   }
 
   .newsletter-text strong {
-    color: rgba(232,226,213,0.85);
+    color: rgba(26,39,68,0.85);
     font-weight: 400;
   }
 
