@@ -826,6 +826,13 @@ export default function TheScan() {
     const primary = sorted[0];
     const secondary = sorted.slice(1, 3).filter(s => s.score < 3.5);
 
+    const overallAvg = scores.reduce((sum, s) => sum + s.score, 0) / scores.length;
+    const scoreSpread = Math.max(...scores.map(s => s.score)) - Math.min(...scores.map(s => s.score));
+    const tightSpread = scoreSpread <= 0.5;
+    const allHigh = tightSpread && overallAvg >= 4.0;
+    const allLow = tightSpread && overallAvg <= 2.0;
+    const allMiddle = tightSpread && overallAvg > 2.0 && overallAvg < 4.0;
+
     const prompt = `You are reading the diagnostic results for a senior leader — a Director, Senior Director, or VP — who has just completed The Scan, a leadership diagnostic from The Glass Elevator.
 
 Their scores across six elements (1–5, where 5 = "Exactly like me"):
@@ -841,25 +848,30 @@ The six elements map to six ways leaders get stuck who are capable but stuck:
 - The Floor → The Commentator: can see exactly what's wrong. Raises it clearly. But ownership of fixing it stays with someone else.
 - The Doors → The Head Down: produces high-quality work but treats communication and visibility as overhead. The right people don't know what they're doing or why it matters.
 
+Overall average: ${overallAvg.toFixed(1)}/5
+Score spread (max minus min): ${scoreSpread.toFixed(1)}
+${allHigh ? `IMPORTANT CONTEXT: This person scored consistently high across all six elements. They are broadly operating well. Do NOT frame them as stuck. Acknowledge their strength, then point to the one element with the most room to grow as the edge worth sharpening. Affirming but honest.` : ''}
+${allLow ? `IMPORTANT CONTEXT: This person scored consistently low across all six elements. This is not a single-element problem — the pattern is broad. Do not diagnose one root cause. Instead, acknowledge this honestly but not harshly. They have just shown real self-awareness. The output should focus on what becomes possible when they start addressing the fundamentals.` : ''}
+${allMiddle ? `IMPORTANT CONTEXT: This person scored consistently in the middle across all six elements — not stuck, not firing on all cylinders. Do not diagnose a single primary pattern. Instead, the output should reflect that the opportunity is everywhere, which means the real starting point is clarity of direction: getting back to basics and deciding with real conviction what they are actually building toward. Until that is clear, effort spreads thin across all six elements without compounding. The tone should feel like an honest, grounding conversation — not a warning.` : ''}
 Primary: ${primary.element} → ${patternMap[primary.id].name} (score: ${primary.score.toFixed(1)}/5)
 ${secondary.length ? `Secondary signals worth noting: ${secondary.map(s => `${s.element} (${patternMap[s.id].name})`).join(', ')}` : ''}
 
 Write the personalised output they will see on screen immediately after completing The Scan.
 
 Rules:
+- No preamble. No wind-up. Start with the point.
 - Plain English. No jargon. No coaching-speak. No corporate language.
-- Sound like a senior executive coach who has seen this before and is giving a peer a straight read — direct but not unkind.
-- STRUCTURE: Lead with the one shift — what becomes possible when this changes. Open with a picture of what that looks like: how they operate differently, what others start to see, what opens up. Make it specific and aspirational. Then explain why: describe honestly what's showing up right now, what it looks like from the outside, and what it's costing them. The reader should feel pulled toward something, not judged for where they are.
-- Tone: direct but not harsh. You're not delivering a verdict. You're showing someone a gap they can close — and what's on the other side of closing it. The discomfort comes from recognition, not from feeling told off.
-- If there are other things showing up alongside this, bring them in naturally as context — not a separate diagnosis.
-- 220–280 words. No bullet points. Flowing paragraphs. No headers.
+- Sound like a senior executive coach giving a peer a straight read — direct, not unkind.
+- STRUCTURE: One short opening sentence that names where to start — the primary element and why it matters most right now. Then briefly name 1–2 other areas worth exploring, framed as the natural next layer once the first shift is made. Keep it grounded: this is a first read, not a full diagnosis. We will always re-evaluate as we go. The tone should feel like the start of a real coaching conversation, not a report.
+- Be direct about where to start. Do not hedge. Do not say "it might be worth considering" — say "start here."
+- 180–220 words. No bullet points. Flowing paragraphs. No headers.
 - Do NOT mention scores or numbers.
 - Do NOT use the words "journey," "unlock," "potential," "impactful," or "leverage" as a verb.
-- Do NOT sound like a performance review. Do NOT use language like "you are not" or frame the person as lacking.
-- The reader should feel: pulled forward by what's possible, and honest enough with themselves to know what needs to change.
+- Do NOT sound like a performance review.
+- The reader should feel: clearly pointed in a direction, and curious to go deeper.
 
 After the main output text, add a line break then write exactly: COACHING_QUESTION_START
-Then write a single coaching question — one sentence — that speaks directly to the shift you opened with. This is the one question worth sitting with after reading this. It should be genuinely open, provocative, and specific to what's showing up for this person. Not rhetorical. A real question a coach would leave someone with. Plain English, no jargon.
+Then write a single coaching question — one sentence. Make it genuinely provocative: the kind of question that stops someone mid-thought and makes them realise they have never properly answered it. It should feel slightly uncomfortable. Not a gentle nudge — a real challenge. Specific to what is showing up for this person. Plain English, no jargon.
 Then write: COACHING_QUESTION_END`;
 
     try {
