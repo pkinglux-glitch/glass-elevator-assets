@@ -758,7 +758,7 @@ function ResultsScreen({ result }) {
         <div className="result-cta">
           <p className="cta-label">Go deeper</p>
           <p className="cta-text">
-            This is what ten minutes surfaces. The Lens is a proper diagnostic with two coaching sessions — it gets to the root of what's holding you back, confirms you're in the right organisation to make the climb worthwhile, and gives you a clear picture of exactly what changes first. If what you've just read resonates, it's worth an hour.
+            This is what ten minutes surfaces. A proper diagnostic goes deeper — it gets to the root of what's holding you back, confirms you're in the right organisation to make the climb worthwhile, and gives you a clear picture of exactly what changes first. If what you've just read resonates, it's worth a conversation.
           </p>
           <div className="cta-links">
             <a className="cta-link-primary" href="https://calendly.com/paul-glasselevatorworks/30min" target="_blank" rel="noopener noreferrer">
@@ -866,6 +866,8 @@ Rules:
 - Be direct about where to start. Do not hedge. Do not say "it might be worth considering" — say "start here."
 - 180–220 words. No bullet points. Flowing paragraphs. No headers.
 - Do NOT mention scores or numbers.
+- Do NOT name the six elements (The View, The Control Panel, The Motor, The Cables, The Floor, The Doors) in the output. Describe the behaviour and what is showing up — not the framework label.
+- Do NOT mention The Lens or any other product by name. If pointing toward next steps, refer to "a proper diagnostic" or "a deeper conversation" — not a specific product.
 - Do NOT use the words "journey," "unlock," "potential," "impactful," or "leverage" as a verb.
 - Do NOT sound like a performance review.
 - The reader should feel: clearly pointed in a direction, and curious to go deeper.
