@@ -903,4 +903,4 @@ Then write: COACHING_QUESTION_END`;
     />
   );
 }
-export { default as TheScan } from './TheScan.tsx';
+
