@@ -16,7 +16,7 @@ const elements = [
     questions: [
       "I have a specific, clear picture of where I'm heading professionally in the next two to three years — and I'm already acting on it.",
       "A meaningful part of my current work involves challenges that sit above what's formally expected of my role.",
-      "I've made a deliberate decision about my next level rather than waiting to see what opportunities appear."
+      "I make deliberate decisions about my next level rather than waiting to see what opportunities appear."
     ]
   },
   {
@@ -34,7 +34,7 @@ const elements = [
     questions: [
       "When I need to move something forward outside my direct control, I rely on relationships and trust — not position or authority.",
       "I could name three or four people at senior levels who would proactively speak up for my work in a room I'm not in.",
-      "I've deliberately built relationships across the business — not just with the people I work with day to day."
+      "I deliberately build relationships across the business — not just with the people I work with day to day."
     ]
   },
   {
@@ -43,7 +43,7 @@ const elements = [
     questions: [
       "When I spot a problem in my organisation, I typically take ownership of fixing it — not just flagging it.",
       "There are things running well in my area right now that I set in motion but no longer need to be directly involved in.",
-      "In the last year, I've started more things off my own initiative than I've been asked to start."
+      "I start more things off my own initiative than I'm asked to start."
     ]
   },
   {
@@ -88,7 +88,7 @@ const styles = `
   .scan-header {
     width: 100%;
     padding: 28px 40px;
-    border-bottom: 1px solid rgba(212,175,55,0.15);
+    border-bottom: 1px solid rgba(212,175,55,0.25);
     display: flex;
     align-items: center;
     gap: 12px;
@@ -104,7 +104,7 @@ const styles = `
   }
 
   .scan-logo-sep {
-    color: rgba(212,175,55,0.3);
+    color: rgba(212,175,55,0.4);
     font-size: 12px;
   }
 
@@ -155,7 +155,7 @@ const styles = `
     font-size: 16px;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(26,39,68,0.7);
+    color: rgba(26,39,68,0.75);
     margin-bottom: 48px;
   }
 
@@ -164,8 +164,8 @@ const styles = `
     gap: 32px;
     margin-bottom: 48px;
     padding: 24px 0;
-    border-top: 1px solid rgba(255,255,255,0.07);
-    border-bottom: 1px solid rgba(255,255,255,0.07);
+    border-top: 1px solid rgba(26,39,68,0.12);
+    border-bottom: 1px solid rgba(26,39,68,0.12);
   }
 
   .meta-item {
@@ -185,7 +185,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.4);
+    color: rgba(26,39,68,0.55);
   }
 
   .btn-primary {
@@ -193,7 +193,7 @@ const styles = `
     align-items: center;
     gap: 12px;
     background: #d4af37;
-    color: #f5f0e8;
+    color: #1a2744;
     border: none;
     padding: 16px 32px;
     font-family: 'DM Sans', sans-serif;
@@ -241,7 +241,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(26,39,68,0.4);
+    color: rgba(26,39,68,0.6);
   }
 
   .progress-count {
@@ -251,7 +251,7 @@ const styles = `
 
   .progress-track {
     height: 2px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(26,39,68,0.12);
     position: relative;
   }
 
@@ -264,7 +264,7 @@ const styles = `
   .element-block {
     margin-bottom: 64px;
     padding-bottom: 64px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(26,39,68,0.1);
   }
 
   .element-block:last-child {
@@ -297,9 +297,9 @@ const styles = `
 
   .question-text {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.65;
-    color: rgba(26,39,68,0.85);
+    color: rgba(26,39,68,0.9);
     margin-bottom: 16px;
   }
 
@@ -312,9 +312,9 @@ const styles = `
   .scale-btn {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(26,39,68,0.25);
     background: transparent;
-    color: rgba(26,39,68,0.4);
+    color: rgba(26,39,68,0.65);
     font-size: 13px;
     cursor: pointer;
     transition: all 0.15s;
@@ -325,14 +325,14 @@ const styles = `
   }
 
   .scale-btn:hover {
-    border-color: rgba(212,175,55,0.5);
+    border-color: rgba(212,175,55,0.6);
     color: #d4af37;
   }
 
   .scale-btn.selected {
     background: #d4af37;
     border-color: #d4af37;
-    color: #f5f0e8;
+    color: #1a2744;
     font-weight: 500;
   }
 
@@ -346,7 +346,7 @@ const styles = `
   .scale-end-label {
     font-size: 10px;
     letter-spacing: 0.1em;
-    color: rgba(26,39,68,0.3);
+    color: rgba(26,39,68,0.5);
     text-transform: uppercase;
   }
 
@@ -360,7 +360,7 @@ const styles = `
 
   .error-msg {
     font-size: 13px;
-    color: #e06c6c;
+    color: #c0392b;
   }
 
   .btn-disabled {
@@ -383,7 +383,7 @@ const styles = `
   .gen-icon {
     width: 56px;
     height: 56px;
-    border: 1px solid rgba(212,175,55,0.3);
+    border: 1px solid rgba(212,175,55,0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -392,8 +392,8 @@ const styles = `
   }
 
   @keyframes pulse {
-    0%, 100% { opacity: 1; border-color: rgba(212,175,55,0.3); }
-    50% { opacity: 0.6; border-color: rgba(212,175,55,0.6); }
+    0%, 100% { opacity: 1; border-color: rgba(212,175,55,0.4); }
+    50% { opacity: 0.6; border-color: rgba(212,175,55,0.7); }
   }
 
   .gen-headline {
@@ -406,7 +406,7 @@ const styles = `
   .gen-body {
     font-size: 14px;
     font-weight: 300;
-    color: rgba(26,39,68,0.5);
+    color: rgba(26,39,68,0.6);
     line-height: 1.6;
   }
 
@@ -427,7 +427,7 @@ const styles = `
 
   .result-divider {
     height: 1px;
-    background: rgba(212,175,55,0.2);
+    background: rgba(212,175,55,0.3);
     margin-bottom: 40px;
   }
 
@@ -435,59 +435,15 @@ const styles = `
     font-size: 16px;
     font-weight: 300;
     line-height: 1.85;
-    color: rgba(26,39,68,0.85);
+    color: rgba(26,39,68,0.9);
     white-space: pre-wrap;
     margin-bottom: 56px;
   }
 
-  .scores-section {
-    margin-bottom: 56px;
-  }
-
-  .scores-title {
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(232,226,213,0.35);
-    margin-bottom: 20px;
-  }
-
-  .score-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 12px;
-  }
-
-  .score-element {
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(26,39,68,0.5);
-    width: 120px;
-    flex-shrink: 0;
-  }
-
-  .score-track {
-    flex: 1;
-    height: 2px;
-    background: rgba(255,255,255,0.07);
-    position: relative;
-  }
-
-  .score-fill {
-    height: 100%;
-    background: #d4af37;
-    transition: width 0.8s ease;
-  }
-
-  .score-fill.low {
-    background: rgba(212,175,55,0.4);
-  }
-
   .result-surface {
     padding: 28px;
-    border: 1px solid rgba(255,255,255,0.07);
-    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(26,39,68,0.12);
+    background: rgba(26,39,68,0.02);
     margin-bottom: 56px;
   }
 
@@ -495,7 +451,7 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(232,226,213,0.35);
+    color: rgba(26,39,68,0.5);
     margin-bottom: 12px;
   }
 
@@ -503,23 +459,8 @@ const styles = `
     font-size: 14px;
     font-weight: 300;
     line-height: 1.75;
-    color: rgba(232,226,213,0.6);
+    color: rgba(26,39,68,0.75);
     margin-bottom: 20px;
-  }
-
-  .surface-areas {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .surface-area {
-    font-size: 13px;
-    font-weight: 300;
-    color: rgba(232,226,213,0.55);
-    padding-left: 16px;
-    position: relative;
-    line-height: 1.5;
   }
 
   .coaching-question {
@@ -527,24 +468,18 @@ const styles = `
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
-    color: rgba(232,226,213,0.75);
+    color: rgba(26,39,68,0.85);
     line-height: 1.6;
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.06);
-  }
-
-  .surface-area::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: rgba(212,175,55,0.5);
+    border-top: 1px solid rgba(26,39,68,0.1);
   }
 
   .result-cta {
     padding: 32px;
-    border: 1px solid rgba(212,175,55,0.2);
+    border: 1px solid rgba(212,175,55,0.3);
     background: rgba(212,175,55,0.04);
+    margin-bottom: 16px;
   }
 
   .cta-label {
@@ -558,7 +493,7 @@ const styles = `
   .cta-text {
     font-size: 15px;
     font-weight: 300;
-    color: rgba(26,39,68,0.7);
+    color: rgba(26,39,68,0.75);
     line-height: 1.6;
     margin-bottom: 24px;
   }
@@ -574,7 +509,7 @@ const styles = `
     align-items: center;
     gap: 8px;
     background: #d4af37;
-    color: #f5f0e8;
+    color: #1a2744;
     text-decoration: none;
     padding: 12px 24px;
     font-size: 13px;
@@ -594,7 +529,7 @@ const styles = `
     align-items: center;
     gap: 8px;
     background: transparent;
-    color: rgba(232,226,213,0.6);
+    color: rgba(26,39,68,0.7);
     text-decoration: none;
     padding: 12px 24px;
     font-size: 13px;
@@ -602,20 +537,19 @@ const styles = `
     letter-spacing: 0.08em;
     text-transform: uppercase;
     cursor: pointer;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(26,39,68,0.2);
     font-family: 'DM Sans', sans-serif;
     transition: all 0.2s;
   }
 
   .cta-link-secondary:hover {
-    border-color: rgba(212,175,55,0.4);
+    border-color: rgba(212,175,55,0.5);
     color: #d4af37;
   }
 
   .result-newsletter {
     padding: 28px;
-    border: 1px solid rgba(255,255,255,0.07);
-    margin-top: 16px;
+    border: 1px solid rgba(26,39,68,0.1);
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -625,19 +559,19 @@ const styles = `
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(232,226,213,0.35);
+    color: rgba(26,39,68,0.5);
   }
 
   .newsletter-text {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.65;
-    color: rgba(232,226,213,0.6);
+    color: rgba(26,39,68,0.75);
   }
 
   .newsletter-text strong {
-    color: rgba(26,39,68,0.85);
-    font-weight: 400;
+    color: #1a2744;
+    font-weight: 500;
   }
 
   .newsletter-link {
@@ -798,8 +732,6 @@ function GeneratingScreen() {
 }
 
 function ResultsScreen({ result }) {
-  const pattern = patternMap[result.scores[0].id];
-
   return (
     <div className="scan-wrap">
       <style>{styles}</style>
@@ -867,8 +799,6 @@ export default function TheScan() {
     el.questions.every((_, i) => answers[`${el.id}_${i}`] !== undefined)
   );
 
-  // Questions at index 2 per element are inverted — high score = stuck behaviour
-  // We flip them so scoring is consistent: higher = stronger on this element
   const invertedQIndex = 2;
 
   const getScore = (id) => {
@@ -973,3 +903,4 @@ Then write: COACHING_QUESTION_END`;
     />
   );
 }
+export { default as TheScan } from './TheScan.tsx';
