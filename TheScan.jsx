@@ -152,7 +152,7 @@ const styles = `
   }
 
   .intro-body {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.75;
     color: rgba(232,226,213,0.75);
@@ -295,7 +295,7 @@ const styles = `
     margin-bottom: 0;
   }
 
-  .question-text {
+    .question-text {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.65;
@@ -404,7 +404,7 @@ const styles = `
   }
 
   .gen-body {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: rgba(232,226,213,0.6);
     line-height: 1.6;
@@ -432,7 +432,7 @@ const styles = `
   }
 
   .result-text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.85;
     color: rgba(232,226,213,0.9);
@@ -456,7 +456,7 @@ const styles = `
   }
 
   .surface-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.75;
     color: rgba(232,226,213,0.75);
@@ -491,7 +491,7 @@ const styles = `
   }
 
   .cta-text {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     color: rgba(232,226,213,0.75);
     line-height: 1.6;
@@ -563,7 +563,7 @@ const styles = `
   }
 
   .newsletter-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.65;
     color: rgba(232,226,213,0.75);
