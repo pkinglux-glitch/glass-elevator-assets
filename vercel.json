@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "buildCommand": "bash build.sh"
+}
